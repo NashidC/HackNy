@@ -9,7 +9,17 @@
 import UIKit
 
 class EmotionViewController: UIViewController {
-
+    @IBAction func depressedButton(_ sender: Any) {
+    }
+    @IBAction func netrualButton(_ sender: Any) {
+    }
+    @IBAction func stressedButton(_ sender: Any) {
+    }
+    @IBAction func anxiousButton(_ sender: Any) {
+    }
+    @IBAction func boredButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

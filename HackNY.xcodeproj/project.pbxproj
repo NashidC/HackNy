@@ -14,6 +14,9 @@
 		40B7A5E61F92EC7D00934FB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B7A5E41F92EC7D00934FB0 /* LaunchScreen.storyboard */; };
 		40B7A5F11F92EC7D00934FB0 /* HackNYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7A5F01F92EC7D00934FB0 /* HackNYTests.swift */; };
 		40B7A5FC1F92EC7D00934FB0 /* HackNYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7A5FB1F92EC7D00934FB0 /* HackNYUITests.swift */; };
+		40B7A60A1F93090E00934FB0 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7A6091F93090E00934FB0 /* CategoryViewController.swift */; };
+		40B7A60C1F93092300934FB0 /* EmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7A60B1F93092300934FB0 /* EmotionViewController.swift */; };
+		40B7A60E1F93093300934FB0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7A60D1F93093300934FB0 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		40B7A5F71F92EC7D00934FB0 /* HackNYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackNYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B7A5FB1F92EC7D00934FB0 /* HackNYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackNYUITests.swift; sourceTree = "<group>"; };
 		40B7A5FD1F92EC7D00934FB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B7A6091F93090E00934FB0 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		40B7A60B1F93092300934FB0 /* EmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionViewController.swift; sourceTree = "<group>"; };
+		40B7A60D1F93093300934FB0 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				40B7A5DB1F92EC7D00934FB0 /* AppDelegate.swift */,
 				40B7A5DD1F92EC7D00934FB0 /* ViewController.swift */,
 				40B7A5DF1F92EC7D00934FB0 /* Main.storyboard */,
+				40B7A6091F93090E00934FB0 /* CategoryViewController.swift */,
+				40B7A60B1F93092300934FB0 /* EmotionViewController.swift */,
+				40B7A60D1F93093300934FB0 /* FeedViewController.swift */,
 				40B7A5E21F92EC7D00934FB0 /* Assets.xcassets */,
 				40B7A5E41F92EC7D00934FB0 /* LaunchScreen.storyboard */,
 				40B7A5E71F92EC7D00934FB0 /* Info.plist */,
@@ -259,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B7A60C1F93092300934FB0 /* EmotionViewController.swift in Sources */,
 				40B7A5DE1F92EC7D00934FB0 /* ViewController.swift in Sources */,
+				40B7A60E1F93093300934FB0 /* FeedViewController.swift in Sources */,
+				40B7A60A1F93090E00934FB0 /* CategoryViewController.swift in Sources */,
 				40B7A5DC1F92EC7D00934FB0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
