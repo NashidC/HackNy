@@ -14,8 +14,10 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var MajorText: UITextField!
     @IBOutlet weak var CollegeText: UITextField!
     @IBOutlet weak var HobbiesText: UITextField!
-    
+    @IBOutlet weak var GenderText: UITextField!
     @IBOutlet weak var Interests: UITextField!
+    @IBOutlet weak var InterestsText: UITextField!
+    
     @IBAction func Submit(_ sender: Any) {
         performSegue(withIdentifier: "toEmotions", sender: nil)
         //These would be keywords/tags to search for gifs
@@ -23,6 +25,14 @@ class QuestionViewController: UIViewController {
         var major = MajorText.text
         var college = CollegeText.text
         var hobbies = HobbiesText.text
+        var gender = GenderText.text
+        var interests = InterestsText.text
+        
+        //dictionary of parameters to be put in the gif search. **convert int(age) to string or convert age ranges to certain keywords like 13-21 teen, 22-27 millenial, etc ?
+        var giphyParams = ["Age" : age, "Major": major, "College":college, "Hobbies": hobbies, "Gender": gender,
+            "Interests": interests]
+        
+        print(giphyParams)
         
     }
     

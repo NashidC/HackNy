@@ -10,6 +10,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
             <string>Avenir-Heavy</string>
             <string>Avenir-Medium</string>
         </array>
@@ -88,13 +89,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-DD-Qqm">
-                                <rect key="frame" x="134" y="53" width="107" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53B-oQ-5X2">
+                                <rect key="frame" x="65" y="508" width="310" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="Button" image="button2"/>
+                                <connections>
+                                    <action selector="Submit:" destination="u2J-qX-f0x" eventType="touchUpInside" id="G3p-EC-Gxv"/>
+                                    <segue destination="UiE-su-xDc" kind="presentation" identifier="toEmotions" id="uFy-Kf-CrP"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J8j-m8-dNO">
                                 <rect key="frame" x="87" y="138" width="226" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,14 +113,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="College/University" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uF5-xj-f63">
-                                <rect key="frame" x="87" y="260" width="226" height="30"/>
+                                <rect key="frame" x="87" y="299" width="226" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hobbies" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZrT-xU-Y92">
-                                <rect key="frame" x="85" y="322" width="226" height="30"/>
+                                <rect key="frame" x="85" y="348" width="226" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -137,15 +140,20 @@
                                 <color key="textColor" red="0.94822629137047654" green="1" blue="0.95610537967715181" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53B-oQ-5X2">
-                                <rect key="frame" x="65" y="508" width="310" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questionnaire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X1-DD-Qqm">
+                                <rect key="frame" x="85" y="52" width="225" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="button2"/>
-                                <connections>
-                                    <action selector="Submit:" destination="u2J-qX-f0x" eventType="touchUpInside" id="G3p-EC-Gxv"/>
-                                    <segue destination="UiE-su-xDc" kind="presentation" identifier="toEmotions" id="uFy-Kf-CrP"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PPn-Fs-LN6">
+                                <rect key="frame" x="86" y="243" width="226" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="EFu-JH-73x"/>
@@ -153,8 +161,10 @@
                     <connections>
                         <outlet property="AgeText" destination="J8j-m8-dNO" id="SpS-Xy-EUS"/>
                         <outlet property="CollegeText" destination="uF5-xj-f63" id="DMg-62-CDY"/>
-                        <outlet property="Hobbies" destination="ZrT-xU-Y92" id="QDM-Qv-Cgf"/>
+                        <outlet property="GenderText" destination="PPn-Fs-LN6" id="JSl-9s-kEB"/>
+                        <outlet property="HobbiesText" destination="ZrT-xU-Y92" id="xig-bY-9vs"/>
                         <outlet property="Interests" destination="nbg-nh-hlv" id="IUG-FK-e07"/>
+                        <outlet property="InterestsText" destination="nbg-nh-hlv" id="jCb-RD-9pd"/>
                         <outlet property="MajorText" destination="X0k-lf-Cps" id="qRk-y1-2jx"/>
                     </connections>
                 </viewController>
