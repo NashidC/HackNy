@@ -10,7 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var SignIn: UILabel!
+   
+    @IBAction func SignInButton(_ sender: Any) {
+         performSegue(withIdentifier: "toQuestions", sender: nil)
+    }
+   
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
